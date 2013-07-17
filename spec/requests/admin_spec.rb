@@ -33,6 +33,7 @@ describe 'Admin' do
   context "editing post" do
     it "can mark an existing post as unpublished" do
       pending # remove this line when you're working on implementing this test
+      
 
       page.should have_content "Published: false"
     end

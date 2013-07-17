@@ -1,7 +1,7 @@
 <H1>Welcome to my blog!</h1>
 
 <%= link_to "View All Posts", posts_url %>
-
+<div class='recent_posts'>
 <% if @recent_posts.any? %>
   <h4>Recent Posts:</h4>
 
@@ -10,3 +10,4 @@
     <br>
   <% end %>
 <% end %>
+</div>

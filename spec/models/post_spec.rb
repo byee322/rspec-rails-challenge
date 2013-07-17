@@ -2,11 +2,13 @@ require 'spec_helper'
 
 describe Post do
   it "title should be automatically titleized before save" do
-    pending
+    post = Post.create(:title => "capitalize", :content => "Bacon Ipsum")
+    expect(post.title).to eq("Capitalize")
   end
 
   it "post should be unpublished by default" do
-    pending
+    post = Post.create(:title => "capitalize", :content => "Bacon Ipsum")
+    expect(post.is_published?).to eq(false)
   end
 
   it "slug should be automatically generated" do
